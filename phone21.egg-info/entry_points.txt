@@ -1,4 +1,0 @@
-
-        [console_scripts]
-        phone21=phone21:cli
-    

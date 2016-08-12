@@ -1,0 +1,19 @@
+info:
+  title: 'phoneID21'
+  description: 'Command line caller id tool.'
+  x-21-quick-buy: "git clone https://github.com/cponeill/phoneID21.git\n
+    cd phnoneID21\nsudo pip3 install --editable .\phoneID21 '<phone number>'"
+  x-21-category: 'utilities'
+  x-21-app-image: 'https://cdn.filepicker.io/api/file/cjjx46SZ74J2S9N44fQJ'
+  x-21-total-price:
+    min: 10000
+    max: 10000
+  contact:
+    name: Casey O'Neill
+    email: casey.oneill@gmail.com
+host: 10.244.107.98:4002
+schemes:
+  - http
+basePath: /
+x-21-manifest-path: /manifest
+
