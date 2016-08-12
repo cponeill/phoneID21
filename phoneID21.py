@@ -19,7 +19,7 @@ address = str(endpoint_info['bitcoin-address'])
 @click.command()
 @click.argument('number')
 def cli(number):
-
+    """Access caller id via click command. Outputs json file."""
     sel_url = server_url+'caller-id?number={0}'
     response = requests.get(url=sel_url.format(number))
     name = response.json()
