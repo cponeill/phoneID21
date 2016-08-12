@@ -1,0 +1,7 @@
+phoneID21.py
+phoneID21.egg-info/PKG-INFO
+phoneID21.egg-info/SOURCES.txt
+phoneID21.egg-info/dependency_links.txt
+phoneID21.egg-info/entry_points.txt
+phoneID21.egg-info/requires.txt
+phoneID21.egg-info/top_level.txt

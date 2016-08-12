@@ -1,0 +1,116 @@
+Traceback (most recent call last):
+  File "server.py", line 24, in <module>
+    app.run(host='0.0.0.0', port=7001)
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 772, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python3.4/dist-packages/werkzeug/serving.py", line 694, in run_simple
+    inner()
+  File "/usr/local/lib/python3.4/dist-packages/werkzeug/serving.py", line 656, in inner
+    fd=fd)
+  File "/usr/local/lib/python3.4/dist-packages/werkzeug/serving.py", line 550, in make_server
+    passthrough_errors, ssl_context, fd=fd)
+  File "/usr/local/lib/python3.4/dist-packages/werkzeug/serving.py", line 464, in __init__
+    HTTPServer.__init__(self, (host, int(port)), handler)
+  File "/usr/lib/python3.4/socketserver.py", line 430, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.4/http/server.py", line 133, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.4/socketserver.py", line 444, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+ * Running on http://0.0.0.0:7001/ (Press CTRL+C to quit)
+ * Running on http://0.0.0.0:7001/ (Press CTRL+C to quit)
+127.0.0.1 - - [03/Aug/2016 19:21:36] "GET /caller-id?number=20699968676 HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:21:37] "GET /caller-id?number=20699968676 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Aug/2016 19:24:23] "GET /caller-id?number=2069998676 HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:24:24] "GET /caller-id?number=2069998676 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Aug/2016 19:24:45] "GET /caller-id?number=2069998676 HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:24:46] "GET /caller-id?number=2069998676 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Aug/2016 19:24:58] "GET /caller-id?number=2069998676 HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:24:59] "GET /caller-id?number=2069998676 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Aug/2016 19:25:30] "GET /caller-id?number=2069998676 HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:25:31] "GET /caller-id?number=2069998676 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Aug/2016 19:26:00] "GET /caller-id?number=2069998676 HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:26:01] "GET /caller-id?number=2069998676 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Aug/2016 19:26:37] "GET /caller-id?number=2069998676 HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:26:39] "GET /caller-id?number=2069998676 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Aug/2016 19:28:23] "GET /top-stories HTTP/1.1" 404 -
+127.0.0.1 - - [03/Aug/2016 19:28:23] "GET /caller-id?number=2069998676 HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:28:24] "GET /caller-id?number=2069998676 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Aug/2016 19:28:42] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:28:42] "GET /caller-id?number=2069998676 HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:28:43] "GET /caller-id?number=2069998676 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Aug/2016 19:29:07] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:29:07] "GET /caller-id?number=2069998676 HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:29:08] "GET /caller-id?number=2069998676 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Aug/2016 19:29:40] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:29:40] "GET /caller-id?number=2069998676 HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:29:42] "GET /caller-id?number=2069998676 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Aug/2016 19:35:26] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:35:26] "GET /caller-id?number=6169425973 HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:35:28] "GET /caller-id?number=6169425973 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Aug/2016 19:39:00] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:39:00] "GET /caller-id?number=6169425973 HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 19:39:02] "GET /caller-id?number=6169425973 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Aug/2016 23:52:54] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 23:52:54] "GET /caller-id?number=2065798946 HTTP/1.1" 402 -
+127.0.0.1 - - [03/Aug/2016 23:52:55] "GET /caller-id?number=2065798946 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Aug/2016 15:39:38] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [04/Aug/2016 15:39:38] "GET /caller-id?number=2062011847 HTTP/1.1" 402 -
+127.0.0.1 - - [04/Aug/2016 15:39:40] "GET /caller-id?number=2062011847 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Aug/2016 17:10:31] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [04/Aug/2016 17:10:31] "GET /caller-id?number=385383006 HTTP/1.1" 402 -
+127.0.0.1 - - [04/Aug/2016 17:10:32] "GET /caller-id?number=385383006 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Aug/2016 17:10:54] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [04/Aug/2016 17:10:54] "GET /caller-id?number=3853830016 HTTP/1.1" 402 -
+127.0.0.1 - - [04/Aug/2016 17:10:55] "GET /caller-id?number=3853830016 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Aug/2016 20:50:08] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [04/Aug/2016 20:50:08] "GET /caller-id?number=2024561111 HTTP/1.1" 402 -
+127.0.0.1 - - [04/Aug/2016 20:50:09] "GET /caller-id?number=2024561111 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Aug/2016 20:50:55] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [04/Aug/2016 20:50:55] "GET /caller-id?number=6502530000 HTTP/1.1" 402 -
+127.0.0.1 - - [04/Aug/2016 20:50:56] "GET /caller-id?number=6502530000 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Aug/2016 20:51:40] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [04/Aug/2016 20:51:40] "GET /caller-id?number=4089961010 HTTP/1.1" 402 -
+127.0.0.1 - - [04/Aug/2016 20:51:41] "GET /caller-id?number=4089961010 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Aug/2016 20:52:02] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [04/Aug/2016 20:52:02] "GET /caller-id?number=6502530000 HTTP/1.1" 402 -
+127.0.0.1 - - [04/Aug/2016 20:52:03] "GET /caller-id?number=6502530000 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2016 16:56:51] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [05/Aug/2016 16:56:51] "GET /caller-id?number=2069998676 HTTP/1.1" 402 -
+127.0.0.1 - - [05/Aug/2016 16:56:52] "GET /caller-id?number=2069998676 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2016 16:57:17] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [05/Aug/2016 16:57:17] "GET /caller-id?number=2069998676 HTTP/1.1" 402 -
+127.0.0.1 - - [05/Aug/2016 16:57:18] "GET /caller-id?number=2069998676 HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2016 12:57:23] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [07/Aug/2016 12:57:23] "GET /caller-id?number=2069998676 HTTP/1.1" 402 -
+127.0.0.1 - - [07/Aug/2016 12:57:24] "GET /caller-id?number=2069998676 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Aug/2016 15:12:37] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [08/Aug/2016 15:12:37] "GET /caller-id?number=4234051204 HTTP/1.1" 402 -
+127.0.0.1 - - [08/Aug/2016 15:12:39] "GET /caller-id?number=4234051204 HTTP/1.1" 200 -
+106.0.4.114 - - [09/Aug/2016 08:21:13] "GET /console/login/LoginForm.jsp HTTP/1.1" 404 -
+127.0.0.1 - - [09/Aug/2016 14:53:38] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [09/Aug/2016 14:53:38] "GET /caller-id?number=4089961010 HTTP/1.1" 402 -
+127.0.0.1 - - [09/Aug/2016 14:53:39] "GET /caller-id?number=4089961010 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2016 18:13:50] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [09/Aug/2016 18:13:50] "GET /caller-id?number=4089961010 HTTP/1.1" 402 -
+127.0.0.1 - - [09/Aug/2016 18:13:52] "GET /caller-id?number=4089961010 HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2016 02:37:57] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [10/Aug/2016 02:37:57] "GET /caller-id?number=4081921192 HTTP/1.1" 402 -
+127.0.0.1 - - [10/Aug/2016 02:37:58] "GET /caller-id?number=4081921192 HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2016 02:38:23] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [10/Aug/2016 02:38:23] "GET /caller-id?number=2066611592 HTTP/1.1" 402 -
+127.0.0.1 - - [10/Aug/2016 02:38:25] "GET /caller-id?number=2066611592 HTTP/1.1" 200 -
+117.21.191.210 - - [10/Aug/2016 08:30:11] "GET /login/LoginForm.jsp HTTP/1.1" 404 -
+69.12.92.196 - - [10/Aug/2016 13:54:13] code 400, message Bad HTTP/0.9 request type ('t3')
+69.12.92.196 - - [10/Aug/2016 13:54:13] "t3 12.2.1" 400 -
+127.0.0.1 - - [10/Aug/2016 15:58:45] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [10/Aug/2016 15:58:45] "GET /caller-id?number=6614698021 HTTP/1.1" 402 -
+127.0.0.1 - - [10/Aug/2016 15:58:46] "GET /caller-id?number=6614698021 HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2016 17:00:58] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [10/Aug/2016 17:00:58] "GET /caller-id?number=2069998676 HTTP/1.1" 402 -
+127.0.0.1 - - [10/Aug/2016 17:01:00] "GET /caller-id?number=2069998676 HTTP/1.1" 200 -
+118.193.206.178 - - [11/Aug/2016 03:18:59] "GET /console/login/LoginForm.jsp HTTP/1.1" 404 -
+127.0.0.1 - - [12/Aug/2016 13:51:14] "GET /caller-id HTTP/1.1" 402 -
+127.0.0.1 - - [12/Aug/2016 13:51:14] "GET /caller-id?number=2069998676 HTTP/1.1" 402 -
+127.0.0.1 - - [12/Aug/2016 13:51:15] "GET /caller-id?number=2069998676 HTTP/1.1" 200 -
