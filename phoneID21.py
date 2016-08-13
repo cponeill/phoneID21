@@ -8,7 +8,7 @@ wallet = Wallet()
 username = Config().username
 requests = BitTransferRequests(wallet, username)
 
-server_url = 'http://localhost:7001/'
+server_url = 'http://10.244.107.98:7001/'
 
 # Request the 402 end-points from the server and assign price and address to variables.
 info = requests.get_402_info(url=server_url+'caller-id')
