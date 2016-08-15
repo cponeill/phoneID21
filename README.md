@@ -8,3 +8,11 @@ In order to use this app,  open the command line in your 21 Computer and run the
     $ cd phoneID21
     $ sudo pip3 install --editable .
     $ phoneID21 "<phone number>"
+
+JSON RESPONSE:
+{
+    "Name": "YOU TUBE",
+    "Price in satoshis": 10000,
+    "Number": "+16502530000",
+    "URI": "/v3/phone/+16502530000"
+}
