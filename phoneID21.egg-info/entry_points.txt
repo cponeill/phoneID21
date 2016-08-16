@@ -1,4 +1,0 @@
-
-        [console_scripts]
-        phoneID21=phoneID21:cli
-    
